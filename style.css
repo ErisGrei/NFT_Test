@@ -1,0 +1,55 @@
+button {
+    background-color: #a0a199;
+    border:rgb(82, 20, 3)
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+input{
+    padding: 0.5rem;
+    border-radius: 8px;
+    background-color: aliceblue;
+    align-items: center;
+    text-align: center;
+}
+
+body{
+    background-color: rgb(82, 20, 3);
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    color: beige;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+table{
+    border: #232322;
+    border-style: dotted;
+    border-color: rgb(225, 227, 230);
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    padding: 1%;
+}
