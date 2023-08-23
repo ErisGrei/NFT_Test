@@ -24,24 +24,24 @@ async function freeMint() {
   const ethers = window.ethers;
   const signer = await window.provider.getSigner();
   //your contract
-  const contract = new ethers.Contract("0xd118391D72dE1Ee0247eabE6039a24E2Ef24DBb5", abi, signer);
+  const contract = new ethers.Contract("0x1E269Fa1934D2dE349C6dD4c7776dF0a7aFa5E61", abi, signer);
   const tx = await contract.freeMint();
   console.log(tx);
 }
 async function myBalance() {
-  const contract = document.getElementById("contract");
-  CONTRACT_ADDRESS = contract.value;
+  const contracts = document.getElementById("contract");
+  CONTRACT_ADDRESS = contracts.value;
   document.getElementById(
     "my_balance"
   ).innerText = `My Balance: ${await myBalance()}`;
 
-  contract.value = "";
+  contracts.value = "";
 
   const accounts = await window.provider.send("eth_requestAccounts", []);
   const ethers = window.ethers;
   const signer = await window.provider.getSigner();
   const contract = new ethers.Contract(CONTRACT_ADDRESS, abi, signer);
-  const balance = await contract.balanceOf(accounts[0]);
+  const balance = await contracts.balanceOf(accounts[1]);
   return balance;
 }
 async function balanceOf() {

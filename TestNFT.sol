@@ -16,11 +16,7 @@ contract TestNFT is ERC721 ("TestNFT","TNFT"){
       _mint(to, tokenId); 
       tokenId++;
     }
-
-    function balanceOf(owner) public {
-      
-    };
     function tokenURI(uint256) override pure public returns (string memory){
-        return "ipfs://bafkreibmcnmrpxdk5prsjfgicpu7bayh3hy4ktng7rtsgcbyk6mcaqrj5a";// metadata upload
+        return "ipfs://bafkreidomo6rkvzj4ap52eushndvqesm3xtyn4cixppdv3vbddwuwizepi";// metadata upload
     }
 } 

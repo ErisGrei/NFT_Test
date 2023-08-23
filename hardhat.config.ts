@@ -5,14 +5,14 @@ const config: HardhatUserConfig = {
   solidity: "0.8.19",
 
   networks: {
-    sepolia:{
-      url: 'https://eth-sepolia.g.alchemy.com/v2/7NkOhetv9AIe3LmoX8BIe0RBTN5q7tDM', //from alchemy
+    mumbai:{
+      url: 'https://polygon-mumbai.g.alchemy.com/v2/vSDS0wq-qBFUhPzkQ2RbISboYyfV7oOO', //from alchemy
       accounts:['c4bc9d97c2a129b70dc390f24c50bbc9d22af1683f2bfd088d952a98fa5ec156'] // private metamask
     },
 
   },
   etherscan:{
-    apiKey: 'D3WMX94DMB1PBE5D4V2EK9GSHF82VNVEMS', // from etherscan.io
+    apiKey: 'XFA8TMYB376RXZA8UMKUTA4NJB7ZBBM9KN', // from etherscan.io for sepolia and from polygonscan for mumbai
   },
 
 };
